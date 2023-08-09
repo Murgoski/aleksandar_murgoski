@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset = "UTF-8">
+	<meta name = "author" content = "Aleksandar Murgoski"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="homeicon.png" />
+    <title>Home</title>
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- SMTP JS -->
+    <script src = "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class = "header">
+        <a href = "#" class = "logo">Aleksandar Murgoski</a>
+
+        <nav class = "navbar">
+            <a href = "#home" class = "active">Home</a>
+            <a href = "#about">About</a>
+            <!-- <a href = "#services">Services</a> -->
+            <a href = "#portfolio">Projects</a>
+            <a href = "#contact">Contact</a>
+        </nav>
+
+        <div class = "bx bx-moon" id = "darkMode-icon"></div>
+
+        <div class = "bx bx-menu" id = "menu-icon"></div>
+    </header>
+
+    <!-- home section design -->
+    <section class = "home" id = "home">
+        <div class = "home-content">
+            <h3>Hello, I am</h3>
+            <h1>Aleksandar Murgoski</h1>
+            <p>
+                I am a student at <span class = "auto-type" style = "color: var(--main-color)"></span>
+            </p>
+
+            <div class = "social-media">
+                <a href = "https://m.facebook.com/Murgoski.Aleksandar/"><i class='bx bxl-facebook' ></i></a>
+                <a href = "https://www.instagram.com/_murgoski_/"><i class='bx bxl-instagram' ></i></a>
+                <a href = "#" onclick = "displayComingSoon()"><i class='bx bxl-linkedin' ></i></a>
+                <a href = "#" onclick = "displayComingSoon()"><i class='bx bxl-gmail' ></i></a>
+            </div>
+
+            <a href = "CV_Aleksandar Murgoski.pdf" download="CV_Aleksandar_Murgoski" class = "btn">DOWNLOAD CV <i class='bx bx-download' ></i></a>
+        </div>
+
+        <div class = "profession-container">
+            <div class = "profession-box">
+                <div class = "profession" style = "--i:0;">
+                    <i class='bx bx-code-alt' ></i>
+                    <h3>Web Developer</h3>
+                </div>
+
+                <div class = "profession" style = "--i:1;">
+                    <!-- <i class='bx bx-camera' ></i> -->
+                    <i class='bx bx-image-alt'></i>
+                    <h3>Photo Editor</h3>
+                </div>
+
+                <div class = "profession" style = "--i:2;">
+                    <i class='bx bx-palette' ></i>
+                    <h3>Web Designer</h3>
+                </div>
+
+                <div class = "profession" style = "--i:3;">
+                    <!-- <i class='bx bx-video' ></i> -->
+                    <i class='bx bx-laptop'></i>
+                    <h3>PC Technician</h3>
+                </div>
+
+                <div class = "circle"></div>
+            </div>
+            <div class = "overlay"></div>
+        </div>
+
+        <div class = "home-img">
+            <img src = "homepic.png" alt = "">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class = "about" id = "about">
+        <div class = "about-img">
+            <img src = "aboutpic2.png" alt = "">
+        </div>
+
+        <div class="read-more-container">
+            <div class = "about-content">
+                <h2 class = "heading">About <span>ME</span></h2>
+                <h3>Hi, I am Here To Help Your Next Project.</h3>
+                <p>Hey there. As you saw on my first page, my name is Aleksandar Murgoski. I am 20 years old and I am from Macedonia, specifically from Struga.</br>
+
+                    My journey began after completing primary school in Struga. I had to decide where I wanted to attend high school. Without a doubt, 
+                    I knew I wanted to study in Slovenia and graduate high school there. I discovered a secondary school
+                    for technical professions, but I was not sure about my choice. 
+                    After reviewing all the programs the school offerd, I ended up selecting the "Computer Operator" program. 
+                    It was a five-year-long high school journey, and at its conclusion, I became a Computer Technician.</br>
+
+                    <span class = "read-more-text">Over those years, I developed a strong passion for computers and everything related to IT. 
+                    My desire to learn everything about the field led me to delve deeper into various areas.
+                    I began learning Adobe Photoshop, which prvided me with extensive experience in photo editing. 
+                    Later, I also even got to learn Adobe PremierePro, which prvided me the basics of video editing.
+                    I had the opportunity to grasp the fundamentals of web development, specifically HTML, CSS and JavaScript.</br>
+
+                    My journey has been fueled by a deep curiosity to learn and excel in the world of technology.
+                    </span>
+                </p>
+            
+                <a href = "javascript:void(0)" class = "btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section design -->
+<!--     <section class = "services" id = "services">
+        <h2 class = "heading">My <span>Services</span></h2>
+
+        <div class = "services-container">
+            <div class = "services-box">
+                <i class='bx bx-code-alt' ></i>
+                <h3>Web Development</h3>
+                <p>TEST</p>
+
+                <a href = "" class = "btn">Read More</a>
+            </div>
+
+            <div class = "services-box">
+                <i class='bx bx-bar-chart-alt' ></i>
+                <h3>Digital Marketing</h3>
+                <p>TEST</p>
+
+                <a href = "" class = "btn">Read More</a>
+            </div>
+
+            <div class = "services-box">
+                <i class='bx bxs-paint' ></i>
+                <h3>Graphic Designer</h3>
+                <p>TEST</p>
+
+                <a href = "" class = "btn">Read More</a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- portfolio section design -->
+    <section class = "portfolio" id = "portfolio">
+        <h2 class = "heading">Latest <span>Projects</span></h2>
+
+        <div class = "portfolio-container">
+            <div class = "portfolio-box">
+                <img src = "portfolio1.jpg" alt = "">
+
+                <div class = "portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Website for a hair salon.</p>
+                    <a href = "#" onclick = "displayInDevelopment()"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class = "portfolio-box">
+                <img src = "portfolio2.jpg" alt = "">
+
+                <div class = "portfolio-layer">
+                    <h4>Corporate Identity</h4>
+                    <p>School project in Adobe Photoshop.</p>
+                    <a href = "#" onclick = "displayInDevelopment()"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- <div class = "portfolio-box">
+                <img src = "images/portfolio3.jpg" alt = "">
+
+                <div class = "portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Test</p>
+                    <a href = "#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div> -->
+
+            <!-- <div class = "portfolio-box">
+                <img src = "images/portfolio4.jpg" alt = "">
+
+                <div class = "portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Test</p>
+                    <a href = "#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class = "portfolio-box">
+                <img src = "images/portfolio5.jpg" alt = "">
+
+                <div class = "portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Test</p>
+                    <a href = "#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class = "portfolio-box">
+                <img src = "images/portfolio6.jpg" alt = "">
+
+                <div class = "portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Test</p>
+                    <a href = "#"><i class='bx bx-link-external'></i></a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- testimonial design -->
+
+    <!-- contact section design -->
+    <section class = "contact" id = "contact">
+        <h2 class = "heading">Contact <span>ME!</span></h2>
+
+        <form autocomplete = "off" id = "contact-form">
+            <div class = "input-box">
+                <input type = "text" class = "inputs" id = "contact-name" onkeyup = "validateName()" placeholder = "Full Name">
+                <span id = "name-error"></span>
+            </div>
+
+            <div class = "input-box">
+                <input type = "email" class = "inputs" id = "contact-email" onkeyup = "validateEmail()" placeholder = "Email Address">
+                <span id = "email-error"></span>
+            </div>
+
+            <div class = "input-box">
+                <input type = "text"  class = "inputs" id = "contact-emailSub" onkeyup = "validateEmailSubject()" placeholder = "Email Subject">
+                <span id = "emailSubject-error"></span>
+            </div>
+
+            <textarea id = "contact-message" cols = "30" rows = "7" class = "inputs" placeholder = "How Can We Help You?" ></textarea>
+            <!-- <input type = "submit" onclick="return validateForm()" value = "Send Message" class = "btn"> -->
+            <button type = "submit" onclick = "sendEmail();" class = "btn">Send Message</button>
+            <span id = "submit-error"></span>
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class = "footer">
+        <div class = "footer-text">
+            <p>Copyright &copy; 2023. Aleksandar Murgoski | All Rights Reserved.</p>
+        </div>
+
+        <div class = "footer-iconTop">
+            <a href = "#home"><i class='bx bx-up-arrow-alt' ></i></a>
+        </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- custom words -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings:["FRI", "Faculty of Computer Science and Informatics"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true
+        })
+
+        var typedName = new Typed(".auto-name",{
+            strings:["Aleksandar Murgoski"],
+            typeSpeed: 100,
+        })
+
+    </script>
+
+    
+    <!-- custom js -->
+    <script src="script.js"></script>
+   
+</body>
+</html>
