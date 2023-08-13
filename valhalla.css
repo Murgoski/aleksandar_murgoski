@@ -245,12 +245,20 @@ span{
         margin-top: -50px;
     }
 
+    .about-content li{
+        text-align: justify;
+    }
+
 }
 
 @media (max-width: 365px){
 
     .about-img img{
         width: 90vw;
+    }
+
+    .about-content li{
+        text-align: justify;
     }
 
     .footer{
