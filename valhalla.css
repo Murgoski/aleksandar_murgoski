@@ -82,6 +82,7 @@ span{
 .about-content li{
     font-size: 1.4rem;
     margin-bottom: 15px;
+    text-align: justify;
 }
 
 .about-content a{
