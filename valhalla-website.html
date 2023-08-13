@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset = "UTF-8">
+	<meta name = "author" content = "Aleksandar Murgoski"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="Valhalla.png" />
+    <title>Valhalla - Website</title>
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="valhalla.css">
+
+</head>
+
+<body>
+
+    <!-- about section design -->
+    <section class = "about" id = "about">
+        
+        <div class = "about-img">
+            <img src = "valhalla_image.jpg" alt = "">
+        </div>
+
+        <div class = "about-content">
+            <h2 class = "heading">Valhalla <span>Website</span></h2>
+            <h3>Fully Working Website For a Hairdressing Salon</h3>
+            <p>
+                Valhalla is a website for a hairdressing salon that I developed as my final high school project. 
+                It provides many functionalities for a modern hair salon website, such as system for ordering customers, 
+                a sign-up and log-in system, viewing ordered customers system and a system for adding new services or deleting existing ones.
+            </p>
+
+            <p>
+                This website comprises four primary pages designed to provide visitors with comprehensive information about the salon's offerings and streamline their interaction with the services.
+            </p>
+            <p>
+                <li><span>About Us: </span>This page serves as an introduction to the salon. It features staff profiles, general salon information, opening hours, location, and contact details.</li>
+                <li><span>Services: </span>Dedicated to showcasing the salon's offerings, this page presents services in visually appealing "cards." Each card includes an image, title, detailed description, and price.</li>
+                <li><span>Order: </span>Visitors encounter a user-friendly form on this page, designed to collect essential customer information for seamless service orders, ensuring a smooth transaction process.</li>
+                <li><span>Log in: </span>An exclusive access point for registered salon employees. Using their credentials, staff can securely access the system, enabling efficient management of customer interactions and appointments.</li>
+            </p>
+
+            <p>
+                In developing this website, I've employed a set of technologies to enhance its functionality and interactivity. 
+                While HTML and CSS provide the fundamental structure and visual aesthetics, the integration of PHP and MySQL programming languages brings advanced capabilities to the table.
+            </p>
+            
+            <p>
+                PHP handles user inputs, processes data, and dynamically generates pages based on specific requests.</br>
+                MySQL securely stores and retrieves the necessary data to support the website's functionalities. 
+            </p>
+
+            <p>
+                To access photos, simply follow the link provided <a href = "#" id="openModalBtn"><span>here.</span></a>
+            </p>
+        
+        </div>
+    
+        <div id = "myModal" class = "modal">
+            <div class = "modal-content">
+                <h3>Photo <span>Gallery</span></h3>
+                <span class = "close">&times;</span>
+                <div class = "image-gallery">
+                    <div class = "image-scroll">
+                        <img class = "slide" src="about-us.jpg">
+                        <img class = "slide" src="services.jpg">
+                        <img class = "slide" src="order.jpg">
+                        <img class = "slide" src="login.JPG">
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+
+
+    <!-- footer design -->
+    <footer class = "footer">
+        <div class = "footer-text">
+            <p>Copyright &copy; 2023. Aleksandar Murgoski | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- custom js -->
+    <script src="valhalla-script.js"></script>
+</body>
+</html>
