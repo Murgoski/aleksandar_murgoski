@@ -332,6 +332,7 @@ span{
 
 .read-more-text{
     display: none;
+    text-align: justify;
 }
 
 .read-more-text--show{
