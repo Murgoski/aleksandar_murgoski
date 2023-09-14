@@ -29,9 +29,9 @@ html{
     overflow-x: hidden;
 }
 
-img{
-    user-select: none;
+img {
     pointer-events: none;
+  -webkit-touch-callout: none;
 }
 
 body{
