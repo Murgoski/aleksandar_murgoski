@@ -29,3 +29,14 @@ ScrollReveal({
 
 ScrollReveal().reveal('.about-content h2, .about-img img', { origin: 'left' });
 ScrollReveal().reveal('.about-content', { origin: 'right' });
+
+/*========== disable right-click on img ==========*/
+// Get all <img> elements on the page
+var images = document.querySelectorAll("img");
+
+// Loop through each <img> element and disable right-click
+images.forEach(function(image) {
+    image.addEventListener("contextmenu", function(e) {
+        e.preventDefault();
+    });
+});
