@@ -29,6 +29,10 @@ html{
     overflow-x: hidden;
 }
 
+img{
+    user-select: none;
+}
+
 body{
     background: var(--bg-color);
     color: var(--text-color)
