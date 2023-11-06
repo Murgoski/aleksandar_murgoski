@@ -854,6 +854,13 @@ span{
     }
 }
 
+@media (max-width: 413px) {
+    .profession-container .profession-box .profession{
+        display: none;
+    }
+}
+
+
 @media (max-width: 365px){
     #darkMode-icon{
         right: 10rem;
