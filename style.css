@@ -848,6 +848,10 @@ span{
     .profession-box .circle{
         display: none;
     }
+
+    .profession-container .profession-box .profession{
+        display: none;
+    }
 }
 
 @media (max-width: 365px){
