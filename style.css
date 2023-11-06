@@ -888,7 +888,6 @@ span{
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-    overscroll-behavior: none;
 }
 
 @media (max-width: 775px){
